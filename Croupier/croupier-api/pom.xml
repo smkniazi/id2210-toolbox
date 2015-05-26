@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>se.sics.p2ptoolbox.croupier</groupId>
+        <artifactId>croupier</artifactId>
+        <version>1.2-SNAPSHOT</version>
+    </parent>
+    <artifactId>croupier-api</artifactId>
+    <name>Croupier API</name>
+    <version>1.2-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    
+    <dependencies>
+        <dependency>
+            <groupId>se.sics.net</groupId>
+            <artifactId>nat-network</artifactId>
+            <version>${network.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>se.sics.p2ptoolbox</groupId>
+            <artifactId>serialization-util</artifactId>
+            <version>${p2ptoolbox.serialization.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+</project>

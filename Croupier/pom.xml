@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>se.kth.co</groupId>
+        <artifactId>global-common</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>se.sics.p2ptoolbox.croupier</groupId>
+    <artifactId>croupier</artifactId>
+    <name>Croupier</name>
+    <version>1.2-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    
+    <modules>
+        <module>croupier-api</module>
+        <module>croupier-core</module>
+        <module>croupier-example</module>
+    </modules>
+    
+    <properties>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
+        <java.compiler.version>1.6</java.compiler.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kompics.version>0.6.1-SNAPSHOT</kompics.version>
+        <network.version>1.2.1-SNAPSHOT</network.version>
+        <p2ptoolbox.serialization.version>1.0-SNAPSHOT</p2ptoolbox.serialization.version>
+        <guava.version>17.0</guava.version>
+    </properties>
+    
+    <dependencies>
+        <dependency>
+            <groupId>se.sics.kompics</groupId>
+            <artifactId>kompics-core</artifactId>
+            <version>${kompics.version}</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+</project>

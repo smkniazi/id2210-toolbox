@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>se.sics.p2ptoolbox</groupId>
+        <artifactId>util</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
+    <groupId>se.sics.p2ptoolbox.util</groupId>
+    <artifactId>vod-net-helper</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <name>Util VoD-Net</name>
+    <url>http://maven.apache.org</url>
+    <properties>
+        <network.vod.version>1.2.1-SNAPSHOT</network.vod.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>se.sics.p2ptoolbox.util</groupId>
+            <artifactId>kompics-basic</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>se.sics.net</groupId>
+            <artifactId>nat-network</artifactId>
+            <version>${network.vod.version}</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>se.sics.net</groupId>
+            <artifactId>netty</artifactId>
+            <version>${network.vod.version}</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+</project>

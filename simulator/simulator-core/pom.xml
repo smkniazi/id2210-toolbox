@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>se.sics.p2ptoolbox</groupId>
+        <artifactId>simulator</artifactId>
+        <version>1.1-SNAPSHOT</version>
+    </parent>
+    <name>Simulator Core</name>
+    <groupId>se.sics.p2ptoolbox.simulator</groupId>
+    <artifactId>simulator-core</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <url>http://maven.apache.org</url>
+    <dependencies>
+        <dependency>
+            <groupId>se.sics.p2ptoolbox.simulator</groupId>
+            <artifactId>simulator-dsl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency> 
+            <groupId>se.sics.p2ptoolbox.util</groupId>
+            <artifactId>basic</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency> 
+            <groupId>se.sics.p2ptoolbox.util</groupId>
+            <artifactId>kompics-basic</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
